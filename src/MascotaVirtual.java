@@ -22,11 +22,18 @@ public class MascotaVirtual {
 		System.out.println(saludo);
 	}
 	
+	public void jugar(int numeroMinutos) {
+		nivelEnergia=nivelEnergia-2*numeroMinutos;
+		System.out.println(nombre+" ha jugado, su energía ahora es "+nivelEnergia);
+		//Sigue...
+	}
+	
 	public void mostrarEstado(){
 		System.out.println("Nombre: "+nombre);
 		System.out.println("Nivel de hambre: "+nivelHambre);
 		System.out.println("Nivel de felicidad: "+nivelFelicidad);
 		System.out.println("Nivel de energía: "+nivelEnergia);
 	}
+	
 	
 }
