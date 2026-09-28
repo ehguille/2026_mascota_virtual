@@ -19,14 +19,19 @@ public class MascotaVirtual {
 	}
 	
 	public void saludar(String saludo) {
-		System.out.println(saludo);
+		System.out.println("Me llamo "+nombre);
 	}
 	
 	public void jugar(int numeroMinutos) {
-		nivelEnergia=nivelEnergia-2*numeroMinutos;
-		System.out.println(nombre+" ha jugado, su energía ahora es "+nivelEnergia);
-		//Sigue...
+		nivelEnergia=nivelEnergia-2*numeroMinutos; //100-2*10=80
+		nivelFelicidad=nivelFelicidad+3*numeroMinutos;
+		nivelHambre=nivelHambre+1*numeroMinutos;
+		System.out.println(nombre+" ha jugado "+numeroMinutos+" minutos.");
 	}
+	
+	public void comer() {}
+	
+	public void dormir(int numeroHoras) {}
 	
 	public void mostrarEstado(){
 		System.out.println("Nombre: "+nombre);
