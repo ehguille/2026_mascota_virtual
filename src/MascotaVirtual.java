@@ -29,9 +29,17 @@ public class MascotaVirtual {
 		System.out.println(nombre+" ha jugado "+numeroMinutos+" minutos.");
 	}
 	
-	public void comer() {}
+	//TODO
+	public void comer() {
+		System.out.println(nombre+" come.");
+	}
 	
+	//TODO
 	public void dormir(int numeroHoras) {}
+	
+	public String getNombre() {
+		return nombre;
+	}
 	
 	public void mostrarEstado(){
 		System.out.println("Nombre: "+nombre);

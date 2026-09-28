@@ -2,14 +2,13 @@
 public class Aplicacion {
 
 	public static void main(String[] args) {
-		MascotaVirtual miMascota=new MascotaVirtual("Chuqui");
+		MascotaVirtual miMascota=new MascotaVirtual("Chuqui");		
+		System.out.println(miMascota.getNombre());
 		
-		miMascota.saludar("¡Buenos días!");
-		miMascota.saludar("¿Qué tal?");	
-
-		miMascota.mostrarEstado();
-		miMascota.jugar(20);
-		miMascota.mostrarEstado();
+		Cuidador unCuidador=new Cuidador();		
+		unCuidador.alimentar(miMascota);
+		unCuidador.jugar(miMascota, 3);
+		
 	}
 
 }
