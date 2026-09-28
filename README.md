@@ -16,3 +16,5 @@ También debe haber un método llamado mostrarEstado() que imprima por pantalla 
 ### Ampliación
 
 Crea una clase llamada Cuidador. Un cuidador puede alimentar a una mascota y puede jugar con ella un número determinado de minutos. 
+
+Crea una clase Propietario que sea el dueño de una única Mascota. Solo el propietario puede jugar con la mascota.
