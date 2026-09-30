@@ -10,8 +10,8 @@ public class MascotaVirtual {
 
 	//Cada mascota puede tener un nombre distinto, pero todas empiezan teniendo 50 puntos de hambre, 50 de felicidad y 100 de energía.
 	//Método constructor, se invoca cada vez que se crea una mascota virtual (new MascotaVirtual...)
-	public MascotaVirtual(String nombreMascota) {
-		nombre=nombreMascota;
+	public MascotaVirtual(String nombre) {
+		this.nombre=nombre;
 		nivelHambre=50;
 		nivelFelicidad=50;
 		nivelEnergia=100;

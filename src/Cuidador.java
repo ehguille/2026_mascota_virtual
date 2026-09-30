@@ -5,8 +5,4 @@ public class Cuidador {
 		unaMascota.comer();
 	}
 	
-	public void jugar(MascotaVirtual unaMascota, int numeroMinutos) {
-		unaMascota.jugar(numeroMinutos);
-	}
-
 }
