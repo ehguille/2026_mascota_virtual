@@ -15,13 +15,22 @@ public class Aplicacion {
 		unCuidador.alimentar(miMascota);	
 		unCuidador.alimentar(otraMascota);
 */
-		Propietario p = new Propietario("Tamagochi");
+/*		Propietario p = new Propietario("Tamagochi");
 		p.jugar(10);
 		
 		Propietario p1 = new Propietario("Pikachu");
-		p1.jugar(10);
+		p1.jugar(10);*/
 
+		MascotaVirtual m1=new MascotaVirtual("Chuqui");
+		MascotaVirtual m2=new MascotaVirtual("Alfajor");
 		
+		MascotaVirtual m3=m2;
+		m2=m1;
+		m1=m3;
+
+		System.out.println(m1.getNombre());
+		System.out.println(m2.getNombre());
+	
 	}
 
 }
